@@ -1,0 +1,132 @@
+$play-button: #FF4A3C
+*
+  box-sizing: border-box
+  font-family: Helvetica, sans-serif
+h1,h2
+  margin: 0
+  font-size: 22px
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+p
+  margin: 0
+header p
+  font-size: 18px
+.list-items p
+  font-size: 15px
+body
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: radial-gradient(45% 45%, #EEEEEE -700%, #141517 100%)
+.track
+  position: relative
+  padding: 5px 20px
+  background-color: rgba(0,0,0,0.4)
+  .play-button
+    position: absolute
+    right: 10px
+    bottom: -20px
+    height: 45px
+    width: 45px
+    background-color: $play-button
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    color: #fff
+    font-size: 20px
+    padding-left: 2px
+  *:not(h3)
+    display: inline-block
+  h3
+    margin: 0
+    color: #fff
+    font-weight: lighter
+  p
+    font-size: 10px
+    color: #fff
+  &-thumb
+    height: 3px
+    width: 150px
+    background-color: blue
+    position: relative
+    margin: 0 10px
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      top: 0
+      bottom: 0
+      width: 70px
+      background-color: red
+
+.wrapper-animation
+  position: relative
+  width: 330px
+  height: 650px
+  box-shadow: 0 0 70px 20px rgba(0,0,0,0.5)
+  > img
+    position: absolute
+    width: inherit
+    z-index: 3
+  .audio-player
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    z-index: 4444
+
+  header
+    position: relative
+    height: 30%
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+  .list-items
+    position: relative
+    z-index: 5
+    background-color: #141517
+    height: 70%
+    padding: 10px 0 0 10px
+    &-top
+      position: relative
+      padding: 0 0 10px 0
+      h2
+        font-size: 18px
+        color: #fff
+      p
+        color: #888
+        font-size: 12px
+        line-height: 2
+      i
+        position: absolute
+        padding: 10px
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+        font-size: 15px
+        color: #fff
+    li
+      position: relative
+      margin-top: 5px
+      &:first-of-type
+        margin-top: 0 !important
+      img
+        height: 55px
+        width: 55px
+      p
+        display: inline-block
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        &:first-of-type
+          margin-left: 10px
+          color: #fff
+        &:last-child
+          color: #888
+          right: 20px
+          font-size: 12px
