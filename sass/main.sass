@@ -21,7 +21,8 @@ body
   display: flex
   justify-content: center
   align-items: center
-  background-image: radial-gradient(45% 45%, #EEEEEE -700%, #141517 100%)
+  // background-image: radial-gradient(45% 45%, #EEEEEE -700%, #141517 100%)
+  background-color: white !important
 .track
   position: relative
   padding: 5px 20px
@@ -40,6 +41,7 @@ body
     color: #fff
     font-size: 20px
     padding-left: 2px
+    cursor: pointer
   *:not(h3)
     display: inline-block
   h3
@@ -69,6 +71,8 @@ body
   width: 330px
   height: 650px
   box-shadow: 0 0 70px 20px rgba(0,0,0,0.5)
+  overflow: hidden
+  background-color: #141517
   > img
     position: absolute
     width: inherit

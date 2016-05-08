@@ -6,7 +6,7 @@ gulp.task('sass',function(){
   return gulp.src('sass/*.sass')
           .pipe(plumber())
           .pipe(sass({outputStyle:'compressed'}))
-          .pipe(gulp.dest('../animation02'));
+          .pipe(gulp.dest('../animation02-done'));
         })
 
 
