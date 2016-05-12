@@ -1,5 +1,9 @@
 $play-button: #FF4A3C
-
+.clearfix:after,.clearfix:before
+  content: ' '
+  display: table
+.clearfix:after
+  clear: both
 *
   box-sizing: border-box
   font-family: Helvetica, sans-serif
@@ -149,8 +153,34 @@ body
 .control-player
   height: 200px
   width: inherit
-  background-color: red
   position: absolute
-  bottom: 100px
+  background-color: #141517
+  bottom: 190px
+  left: 0
   z-index: 5555
   opacity: 0
+  &--compteur
+    > *
+      float: left
+      width: 50%
+      text-align: center
+      padding-top: 20px
+      height: 100px
+    .panel
+      color: #F4F4F4
+      i
+        margin-top: 25px
+  &--controls
+    text-align: center
+    color: #F4F4F4
+    font-size: 25px
+    padding-top: 30px
+    height: 100px
+    i
+      margin: 20px
+      &.fa-caret-right
+        font-size: 35px
+        transform: translateY(3px)
+      &.fa-caret-left
+        font-size: 35px
+        transform: translateY(3px)
